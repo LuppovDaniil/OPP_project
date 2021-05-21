@@ -26,16 +26,16 @@ genes - array-like object of gene names
   Class for expressions data  
   (path_rnaseq, path_patient, path_sample) - paths for expressions data, patients, samples 
   #### Методы класса:
-  - **gene_distribution(self, gene_names)**  
-        returns genes' distribution histograms  
+  - **gene_distribution(self, gene_names)**    
+        Returns genes' distribution histograms  
         param:  
         gene_names - array-like object that contains gene names.
-  - **clustering(self, Cophenet = True)**
+  - **clustering(self, Cophenet = True)**  
         Calculating the clusterisation of data based on rna sequencing.  
         param:  
         Coherent - showing cophenetic correlation of clusterisation.  
   - **deconvolution(self, n = 1)**  
-        returns umap plot of RNA sequence data.  
+        Returns umap plot of RNA sequence data.  
         param:  
         n - the number of clusters. If n != 1, clusters will be shown on the plot.  
 ### - **CLUSTERING**
@@ -43,21 +43,21 @@ genes - array-like object of gene names
   Сlass for cluterized data  
   (Z, expressions) - scoring output, pd.dataframe with IDs and expressions
   #### Методы класса:
-  - **dendogram(self, y = False)**  
+  - **dendogram(self, y = False)**    
         Build dendogram for hierachial clustering  
         param:  
         y - cutline  
-  - **expression_clustering(self, n)**
-        returns expression table with clusters  
+  - **expression_clustering(self, n)**  
+        Returns expression table with clusters  
         param:  
         n - number of slusters the data will be clusterized  
-  - **sample_clustering(self, n, samples)**
-        returns sample table with clusters  
+  - **sample_clustering(self, n, samples)**  
+        Returns sample table with clusters  
         param:  
         n - number of clusters  
         samples - pd.dataframe with samples without service rows  
-  - **patient_clustering(self, n, samples, patients)**  
-        returns patient table with clusters  
+  - **patient_clustering(self, n, samples, patients)**    
+        Returns patient table with clusters  
         param:  
         n - number of clusters  
         samples - pd.dataframe with samples without service rows  
