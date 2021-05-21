@@ -21,6 +21,6 @@ param:
 genes - array-like object of gene names  
   
 ## Классы, реализцемые в этом проекте:  
-- **EXPRESSIONS**  
-  ### Методы класса:
+### - **EXPRESSIONS**  
+  #### Методы класса:
   - 
