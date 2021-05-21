@@ -20,10 +20,10 @@ returns entrezgene ID
 param:
 genes - array-like object of gene names  
   
-## Классы, реализцемые в этом проекте:  
+## Классы, реализуемые в этом проекте:  
 ### - **EXPRESSIONS** 
   #### Инициализация:
-  Class for expressions data
+  Class for expressions data  
   (path_rnaseq, path_patient, path_sample) - paths for expressions data, patients, samples 
   #### Методы класса:
   - **gene_distribution(self, gene_names)**  
@@ -38,5 +38,8 @@ genes - array-like object of gene names
         returns umap plot of RNA sequence data.  
         param:  
         n - the number of clusters. If n != 1, clusters will be shown on the plot.  
-        
-        
+### - **CLUSTERING**
+  #### Инициализация:
+  Сlass for cluterized data  
+  (Z, expressions) - scoring output, pd.dataframe with IDs and expressions
+  
