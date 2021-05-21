@@ -22,5 +22,5 @@ genes - array-like object of gene names
   
 ## Классы, реализцемые в этом проекте:  
 - **EXPRESSIONS**  
-  ## Методы класса:
+  ### Методы класса:
   - 
