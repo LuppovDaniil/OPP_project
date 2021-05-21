@@ -8,7 +8,6 @@ class CLUSTERING:
     def __init__(self, Z, expressions):
         """
         class for cluterized data
-        n - number of clusters
         Z - scoring output
         expressions - pd.dataframe with IDs and expressions
         """
