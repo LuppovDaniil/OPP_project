@@ -21,6 +21,22 @@ param:
 genes - array-like object of gene names  
   
 ## Классы, реализцемые в этом проекте:  
-### - **EXPRESSIONS**  
+### - **EXPRESSIONS** 
+  #### Инициализация:
+  Class for expressions data
+  (path_rnaseq, path_patient, path_sample) - paths for expressions data, patients, samples 
   #### Методы класса:
-  - 
+  - **gene_distribution(self, gene_names)**  
+        returns genes' distribution histograms  
+        param:  
+        gene_names - array-like object that contains gene names.
+  - **clustering(self, Cophenet = True)**
+        Calculating the clusterisation of data based on rna sequencing.  
+        param:  
+        Coherent - showing cophenetic correlation of clusterisation.  
+  - **deconvolution(self, n = 1)**  
+        returns umap plot of RNA sequence data.  
+        param:  
+        n - the number of clusters. If n != 1, clusters will be shown on the plot.  
+        
+        
