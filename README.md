@@ -42,4 +42,23 @@ genes - array-like object of gene names
   #### Инициализация:
   Сlass for cluterized data  
   (Z, expressions) - scoring output, pd.dataframe with IDs and expressions
-  
+  #### Методы класса:
+  - **dendogram(self, y = False)**  
+        Build dendogram for hierachial clustering  
+        param:  
+        y - cutline  
+  - **expression_clustering(self, n)**
+        returns expression table with clusters  
+        param:  
+        n - number of slusters the data will be clusterized  
+  - **sample_clustering(self, n, samples)**
+        returns sample table with clusters  
+        param:  
+        n - number of clusters  
+        samples - pd.dataframe with samples without service rows  
+  - **patient_clustering(self, n, samples, patients)**  
+        returns patient table with clusters  
+        param:  
+        n - number of clusters  
+        samples - pd.dataframe with samples without service rows  
+        patients - pd.dataframe with patients without service rows  
