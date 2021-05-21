@@ -1,8 +1,8 @@
-"# OPP_project_Expression analysis" 
+"# OPP_project_Expression analysis"  
 Этот проект предоставляет пользователю достаточно исчерпывающий pipeline для анализа экспрессий.  
 Для работы с этим проектом пользователь должен предоставить 3 таблицы: таблицу с информацией об образцах, таблицу с инфрмацией о пациентах и таблицу с экспрессиями генов в каждом из образцов.  
 Функции, реализуемые в этом проекте:
-\textit{GeneFinder (genes)}  
+\textbf{GeneFinder (genes)}  
 returns entrezgene ID
 param:
 genes - array-like object of gene names  
