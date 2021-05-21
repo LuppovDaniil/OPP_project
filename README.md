@@ -61,4 +61,19 @@ genes - array-like object of gene names
         param:  
         n - number of clusters  
         samples - pd.dataframe with samples without service rows  
+        patients - pd.dataframe with patients without service rows
+  - **Caplan_Meier(self, n, samples, patients, ci_show = False)**  
+        Returns Caplan_Meier diagram with track for each cluster  
+        param:  
+        n - number of clusters  
+        samples - pd.dataframe with samples without service rows  
         patients - pd.dataframe with patients without service rows  
+  - **Heat_Map_Overexpression(self, n, args)**
+        returns heatmap with overexpressed genes  
+        param - number of clusters  
+        args - threshold list of overexpression for each cluster
+  - **Heat_Map_Downexpression(self, n, args)**  
+        returns heatmap with overexpressed genes  
+        param - number of clusters  
+        args - threshold of overexpression for each cluster  
+       
